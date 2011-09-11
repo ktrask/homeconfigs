@@ -7,6 +7,39 @@ require("beautiful")
 -- Notification library
 require("naughty")
 
+
+mytextbox = widget({type = "textbox"})
+mytextbox.text = ""
+--
+--
+--mytimer = timer( {timeout = 10})
+--mytimer:add_signal("timeout", function() mytextbox.text = os.time() end)
+--mytimer:start()
+
+
+
+require("battery")
+
+-- Create fraxbat widget
+fraxbat = widget({ type = "textbox", name = "fraxbat", align = "right" })
+fraxbat.text = 'fraxbat';
+awful.hooks.timer.register(10, function () hook_fraxbat(fraxbat,'BAT0') end)
+
+
+
+
+
+
+-- Battery
+--include("battery.lua")
+--
+--bat_clo = battery.batclosure("BAT0")
+--Batterywidget.text = bat_clo()
+--Battimer = timer({ timeout = 30 })
+--Battimer:add_signal("timeout", function() batterywidget.text = bat_clo() end)
+--Battimer:start()
+
+
 -- Create the wibox
 --mywibox[s] = awful.wibox({ position = "left", width = "18", screen = s })
 
@@ -50,7 +83,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9,'a','b','c','d','e','f','g','h','i','j','k','l','mail','n','o','p','q','r','s','t','u','v','www','x','y','z'}, s, layouts[1])
+    tags[s] = awful.tag({ 'α','β','γ','δ','ε','ζ','η','θ','ι','κ','λ','μ','ν','ξ','o','π','ρ','σ','τ','υ','φ','χ','ψ','ω'}, s, layouts[1])
 end
 -- }}}
 
@@ -61,10 +94,14 @@ myawesomemenu = {
    { "edit config", editor_cmd .. " " .. awful.util.getdir("config") .. "/rc.lua" },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
-}
+   }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+                                    { "open terminal", terminal },
+				    { "firefox", "firefox"},
+				    { "keylayout: de", "setxkbmap de"},
+				    { "keylayout: neo", "setxkbmap de -variant neo"}
+
                                   }
                         })
 
@@ -149,6 +186,9 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
+	mytextbox,
+	fraxbat,
+--	Batterywidget,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -335,3 +375,5 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+
