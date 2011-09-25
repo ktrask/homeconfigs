@@ -12,7 +12,7 @@ export ZSH_THEME="ktrask"
 # export CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
+export DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
@@ -60,3 +60,6 @@ function zle-keymap-select {
 zle -N zle-keymap-select
 
 zstyle ':completion::complete:*' use-cache 1
+
+export TERM=xterm
+

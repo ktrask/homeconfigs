@@ -110,11 +110,62 @@ setprompt () {
     ###
     # Finally, the prompt.
 
-    PROMPT='$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
+    TEST=`echo $HOST|md5sum|sed -r "s/(.).*/\1/"`
+    if [[ "$TEST" == "0" ]]; then
+	PR_HCOLOR=$PR_GREEN
+    fi 
+    if [[ "$TEST" == "1" ]]; then
+	PR_HCOLOR=$PR_RED
+    fi
+    if [[ "$TEST" == "2" ]]; then
+	PR_HCOLOR=$PR_YELLOW
+    fi 
+    if [[ "$TEST" == "3" ]]; then
+	PR_HCOLOR=$PR_BLUE
+    fi
+    if [[ "$TEST" == "4" ]]; then
+	PR_HCOLOR=$PR_MAGENTA
+    fi 
+    if [[ "$TEST" == "5" ]]; then
+	PR_HCOLOR=$PR_CYAN
+    fi
+    if [[ "$TEST" == "6" ]]; then
+	PR_HCOLOR=$PR_WHITE
+    fi 
+    if [[ "$TEST" == "7" ]]; then
+	PR_HCOLOR=$PR_GREY
+    fi
+    if [[ "$TEST" == "0" ]]; then
+	PR_HCOLOR=$PR_GREEN
+    fi 
+    if [[ "$TEST" == "8" ]]; then
+	PR_HCOLOR=$PR_RED
+    fi
+    if [[ "$TEST" == "9" ]]; then
+	PR_HCOLOR=$PR_YELLOW
+    fi 
+    if [[ "$TEST" == "a" ]]; then
+	PR_HCOLOR=$PR_BLUE
+    fi
+    if [[ "$TEST" == "b" ]]; then
+	PR_HCOLOR=$PR_MAGENTA
+    fi 
+    if [[ "$TEST" == "c" ]]; then
+	PR_HCOLOR=$PR_CYAN
+    fi
+    if [[ "$TEST" == "d" ]]; then
+	PR_HCOLOR=$PR_WHITE
+    fi 
+    if [[ "$TEST" == "e" ]]; then
+	PR_HCOLOR=$PR_GREY
+    fi
+
+
+PROMPT='$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
 $PR_CYAN$PR_SHIFT_IN$PR_ULCORNER$PR_HBAR$PR_SHIFT_OUT$PR_GREY(\
 $PR_GREEN%$PR_PWDLEN<...<%~%<<\
 $PR_GREY)`rvm_prompt_info`$PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_HBAR${(e)PR_FILLBAR}$PR_HBAR$PR_SHIFT_OUT$PR_GREY(\
-$PR_CYAN%(!.%SROOT%s.%n)$PR_GREY@$PR_GREEN%m:%l:%!\
+$PR_CYAN%(!.%SROOT%s.%n)$PR_GREY@$PR_HCOLOR%m:%l:%!\
 $PR_GREY)$PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_URCORNER$PR_SHIFT_OUT\
 
 $PR_CYAN$PR_SHIFT_IN$PR_LLCORNER$PR_BLUE$PR_HBAR$PR_SHIFT_OUT(\

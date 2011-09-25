@@ -15,3 +15,6 @@ URxvt.tabbed.tabbar-fg:	2
 URxvt.tabbed.tabbar-bg:	0
 URxvt.tabbed.tab-fg:	0
 URxvt.tabbed.tab-bg:	80
+
+urxvt*termName:rxvt-256color
+
