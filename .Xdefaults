@@ -1,11 +1,13 @@
 URxvt.saveLines:    10000
 URxvt.scrollBar:    false
-URxvt.inheritPixmap:true
+#URxvt.inheritPixmap:true
 URxvt.tintColor:    grey
 URxvt.shading:	60
 URxvt.foreground:   white
 URxvt.background:   black
-URxvt.sevondaryScroll:	true
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0000/dddd
+URxvt.secondaryScroll:	true
 URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=12
 URxvt.perl-ext-common:	default,matcher,tabbed
 URxvt.urlLauncher:  firefox
@@ -16,5 +18,5 @@ URxvt.tabbed.tabbar-bg:	0
 URxvt.tabbed.tab-fg:	0
 URxvt.tabbed.tab-bg:	80
 
-urxvt*termName:rxvt-256color
+urxvt*termName:xterm
 
