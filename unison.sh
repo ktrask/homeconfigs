@@ -1,6 +1,6 @@
 #!/bin/sh
 
-unison `pwd` /home/ktrask \
+unison `pwd` $HOME \
     -path .vim/	    \
     -path .config/awesome/  \
     -path .oh-my-zsh \
