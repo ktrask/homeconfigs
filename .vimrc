@@ -15,7 +15,7 @@ set smartcase
 
 set ruler
 set showmatch
-set softtabstop=4
+set softtabstop=8
 set wrap
 syntax on
 filetype on
