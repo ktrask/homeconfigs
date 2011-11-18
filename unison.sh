@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mkdir -p $HOME/.config
+
 unison `pwd` $HOME \
     -path .vim/	    \
     -path .config/awesome/  \

@@ -29,7 +29,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/jre/bin:/opt/kde/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/lib/perl5/vendor_perl/bin:/usr/bin/core_perl:/opt/qt/bin:/home/ktrask/bin
 
-#alias ls='ls -aF --color=always'
+alias ls='ls -BaF --color=always'
 alias "cdB"="cd /home/ktrask/Bildung/studium/master-physik/semester_2/"
 alias "cdM"="cd /home/ktrask/Bildung/studium/master-physik/masterarbeit/"
 
@@ -62,4 +62,10 @@ zle -N zle-keymap-select
 zstyle ':completion::complete:*' use-cache 1
 
 export TERM=xterm
+
+alias pcat=pygmentize
+
+function pless() {
+	    pcat "$1" | less -R
+}
 

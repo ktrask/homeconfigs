@@ -27,4 +27,4 @@ hi Comment      ctermfg=darkgrey
 "set runtimepath="/usr/share/vim/vimfiles/plugin/"
 
 set rtp^="/usr/share/vim/vimfiles/plugin/"
-
+cmap w!! %!sudo tee > /dev/null %
