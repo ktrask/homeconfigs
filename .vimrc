@@ -28,3 +28,9 @@ hi Comment      ctermfg=darkcyan
 
 set rtp^="/usr/share/vim/vimfiles/plugin/"
 cmap w!! %!sudo tee > /dev/null %
+
+im üü <ESC>:w<CR>i
+im öö <ESC>:w<CR>:make<CR>
+im ;; <ESC>
+im ää <ESC>
+
