@@ -22,7 +22,7 @@ filetype on
 set foldmethod=indent
 set nofoldenable
 set background=dark
-hi Comment      ctermfg=darkgrey
+hi Comment      ctermfg=darkcyan
 
 "set runtimepath="/usr/share/vim/vimfiles/plugin/"
 
