@@ -20,3 +20,8 @@ URxvt.tabbed.tab-bg:	80
 
 urxvt*termName:xterm
 
+URxvt.perl-ext:      default,url-select
+URxvt.keysym.M-u:    perl:url-select:select_next
+URxvt.urlLauncher:   firefox
+URxvt.underlineURLs: true
+
