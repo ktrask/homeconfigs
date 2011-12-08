@@ -3,12 +3,12 @@ URxvt.scrollBar:    false
 #URxvt.inheritPixmap:true
 URxvt.tintColor:    grey
 URxvt.shading:	60
-URxvt.foreground:   white
+URxvt.foreground:   darkgreen
 URxvt.background:   black
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0000/dddd
+urxvt*background: rgba:0000/1111/0000/dddd
 URxvt.secondaryScroll:	true
-URxvt.font: xft:terminus:pixelsize=10
+URxvt.font: xft:terminus:pixelsize=8
 URxvt.perl-ext-common:	default,matcher,tabbed
 URxvt.urlLauncher:  firefox
 URxvt.matcher.button:	1
