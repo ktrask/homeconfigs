@@ -19,6 +19,7 @@ mytextbox.text = ""
 
 
 require("battery")
+require("mailbar")
 
 -- Create fraxbat widget
 fraxbat = widget({ type = "textbox", name = "fraxbat", align = "right" })

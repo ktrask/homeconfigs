@@ -69,3 +69,5 @@ function pless() {
 	    pcat "$1" | less -R
 }
 
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
