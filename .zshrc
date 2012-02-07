@@ -61,11 +61,13 @@ zle -N zle-keymap-select
 
 zstyle ':completion::complete:*' use-cache 1
 
-export TERM=xterm
+export TERM='xterm-256color'
 
 alias pcat=pygmentize
 
 function pless() {
 	    pcat "$1" | less -R
 }
+
+task
 
