@@ -14,11 +14,21 @@ syn match txtHeading /^\s*\d.*$/ contains=@Spell
 
 syn match txtMinus /-/ contains=@Spell
 
+syn match txtColon /.*:$/ contains=@Spell
+syn match txtNumerateS /(\d*).*/ 
+syn match txtNumerateS  /\[\d*\].*/ 
 syn match txtNumerate /(\d*)/ 
 syn match txtNumerate /\[\d*\]/ 
+
+
+
 
 highlight default link txtComment Comment
 highlight default link txtHeading Constant
 
 highlight default link txtMinus Type
 highlight default link txtNumerate Number
+highlight default link txtColon Statement 
+
+highlight default link txtNumerate Type
+

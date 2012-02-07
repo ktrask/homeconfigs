@@ -53,6 +53,10 @@ function hook_fraxbat (tbw, bat)
            fh:close()
            if fraxbat_st == stat then
               delta= os.difftime(os.time(),fraxbat_ts)
+	      if delta > 10000 then
+		      fraxbat_ts = os.time()
+		      now = fraxbat_ch
+	      end
               est= math.abs(fraxbat_ch - now)
               if delta > 30 and est > 0 then
                  est= delta/est
