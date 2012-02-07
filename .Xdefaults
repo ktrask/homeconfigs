@@ -3,12 +3,12 @@ URxvt.scrollBar:    false
 #URxvt.inheritPixmap:true
 URxvt.tintColor:    grey
 URxvt.shading:	60
-URxvt.foreground:   white
+URxvt.foreground:   darkgreen
 URxvt.background:   black
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0000/dddd
+urxvt*background: rgba:0000/1111/0000/dddd
 URxvt.secondaryScroll:	true
-URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=9
+URxvt.font: xft:terminus:pixelsize=8
 URxvt.perl-ext-common:	default,matcher,tabbed
 URxvt.urlLauncher:  firefox
 URxvt.matcher.button:	1
@@ -19,4 +19,11 @@ URxvt.tabbed.tab-fg:	0
 URxvt.tabbed.tab-bg:	80
 
 urxvt*termName:xterm
+
+URxvt.perl-ext:      default,url-select
+URxvt.keysym.M-u:    perl:url-select:select_next
+URxvt.urlLauncher:   firefox
+URxvt.underlineURLs: true
+
+URxvt.mapAlert: true
 

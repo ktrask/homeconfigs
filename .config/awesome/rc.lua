@@ -10,16 +10,24 @@ require("naughty")
 
 mytextbox = widget({type = "textbox"})
 mytextbox.text = ""
+
+
+--taskswidget = widget({type = "textbox"})
+--taskswidget.text = get_duetask();
+
+--taskswidget:buttons(awful.util.table.join(
+--        awful.button({ }, 1, function() taskswidget.text = next_duetask() end),
+--	        awful.button({ }, 3, function() taskswidget.text = prev_duetask() end)))
+
 --
 --
 --mytimer = timer( {timeout = 10})
 --mytimer:add_signal("timeout", function() mytextbox.text = os.time() end)
 --mytimer:start()
 
-
+require("taskwarrior")
 
 require("battery")
-require("mailbar")
 
 -- Create fraxbat widget
 fraxbat = widget({ type = "textbox", name = "fraxbat", align = "right" })
@@ -377,4 +385,4 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-
+add_tasklist()

@@ -30,8 +30,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/jre/bin:/opt/kde/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/lib/perl5/vendor_perl/bin:/usr/bin/core_perl:/opt/qt/bin:/home/ktrask/bin
 
 alias ls='ls -BaF --color=always'
-alias "cdB"="cd /home/ktrask/Bildung/studium/master-physik/semester_3/"
-alias "cdM"="cd /home/ktrask/Bildung/studium/master-physik/masterarbeit/"
+alias "cdB"="cd $HOME/Bildung/studium/master-physik/semester_3/"
+alias "cdM"="cd $HOME/Bildung/studium/master-physik/masterarbeit/"
 
 #alias pwgen="pwgen 20"
 alias pacman='pacman-color'
@@ -61,7 +61,7 @@ zle -N zle-keymap-select
 
 zstyle ':completion::complete:*' use-cache 1
 
-export TERM=xterm
+export TERM='xterm-256color'
 
 alias pcat=pygmentize
 
@@ -70,4 +70,5 @@ function pless() {
 }
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+task
 
