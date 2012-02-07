@@ -13,3 +13,4 @@ unison `pwd` $HOME \
     -path .zshenv \
     -path .zshrc \
     -path .zsh-update \
+    -path .vimperatorrc \
