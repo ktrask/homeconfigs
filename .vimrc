@@ -18,10 +18,11 @@ set showmatch
 set softtabstop=8
 set wrap
 syntax on
+set background=dark
+colorscheme solarized
 filetype on
 set foldmethod=indent
 set nofoldenable
-set background=dark
 hi Comment      ctermfg=darkcyan
 
 "set runtimepath="/usr/share/vim/vimfiles/plugin/"
