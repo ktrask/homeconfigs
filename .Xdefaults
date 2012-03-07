@@ -3,7 +3,7 @@ URxvt.scrollBar:    false
 #URxvt.inheritPixmap:true
 URxvt.tintColor:    grey
 URxvt.shading:	60
-URxvt.foreground:   darkgreen
+URxvt.foreground:   darkgrey
 URxvt.background:   black
 urxvt*depth: 32
 urxvt*background: rgba:0000/1111/0000/dddd
