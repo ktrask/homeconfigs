@@ -31,13 +31,15 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ja
 
 alias ls='ls -BF --color=always'
 alias "cdB"="cd $HOME/Bildung/studium/master-physik/semester_4/"
+fpath=($fpath ~/zsh-completions )
+
 alias "cdM"="cd $HOME/Bildung/studium/master-physik/masterarbeit/"
 
 #alias pwgen="pwgen 20"
 alias pacman='pacman-color'
 alias 'sudo pacman'='sudo pacman-color'
 
-
+#bindkey -v
 bindkey "^[OH" beginning-of-line
 bindkey "^[[3~" delete-char
 bindkey "^[OF" end-of-line
@@ -46,8 +48,8 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[7~" beginning-of-line
 bindkey "^[[3~" delete-char
 bindkey "^[[8~" end-of-line
-#bindkey "
-
+bindkey "^N" accept-and-menu-complete
+bindkey "^P" push-line
 
 # If I am using vi keys, I want to know what mode I'm currently using.
 # zle-keymap-select is executed every time KEYMAP changes.
