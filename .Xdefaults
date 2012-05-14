@@ -9,6 +9,7 @@ urxvt*depth: 32
 urxvt*background: rgba:0000/1111/0000/dddd
 URxvt.secondaryScroll:	true
 URxvt.font: xft:montecarlo:pixelsize=8
+URxvt.boldFont: xft:montecarlo:pixelsize=8
 URxvt.perl-ext-common:	default,matcher,tabbed
 URxvt.urlLauncher:  firefox
 URxvt.matcher.button:	1
