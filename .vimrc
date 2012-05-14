@@ -12,6 +12,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set wildmenu
 
 set ruler
 set showmatch
@@ -23,6 +24,8 @@ colorscheme solarized
 filetype on
 set foldmethod=indent
 set nofoldenable
+set laststatus=2
+
 hi Comment      ctermfg=darkcyan
 
 "set runtimepath="/usr/share/vim/vimfiles/plugin/"
@@ -30,7 +33,7 @@ hi Comment      ctermfg=darkcyan
 set rtp^="/usr/share/vim/vimfiles/plugin/"
 cmap w!! %!sudo tee > /dev/null %
 
-im üü <ESC>:w<CR>i
+im üü <ESC>:w<CR>a
 im öö <ESC>:w<CR>:make<CR>
 im ;; <ESC>
 im ää <ESC>
@@ -66,3 +69,5 @@ fun SetupVAM()
         endf
         call SetupVAM()
 
+call pathogen#infect()
+let g:Powerline_symbols = 'unicode'
