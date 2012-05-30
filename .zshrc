@@ -1,4 +1,4 @@
-export TERM='xterm-256color'
+#export TERM='xterm-256color'
 
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
@@ -33,6 +33,8 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ja
 
 
 alias ls='ls -BF --color=always'
+eval $( dircolors -b $HOME/.zsh/LS_COLORS )
+
 alias "cdB"="cd $HOME/Bildung/studium/master-physik/semester_4/"
 fpath=($fpath ~/zsh-completions )
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

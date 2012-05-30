@@ -8,8 +8,10 @@ URxvt.background:   black
 urxvt*depth: 32
 urxvt*background: rgba:0000/1111/0000/dddd
 URxvt.secondaryScroll:	true
-URxvt.font: xft:montecarlo:pixelsize=8
-URxvt.boldFont: xft:montecarlo:pixelsize=8
+URxvt.font: xft:erusfont:pixelsize=8
+URxvt.boldFont: xft:montecarlo:pixelsize=8:regular:bold
+URxvt.italicFont: xft:Consolas:pixelsize=9:regular:italic:autohint=true:antialias=true
+URxvt.boldItalicFont: xft:Consolas:pixelsize=9:bold:italic:autohint=true:antialias=true
 URxvt.perl-ext-common:	default,matcher,tabbed
 URxvt.urlLauncher:  firefox
 URxvt.matcher.button:	1
@@ -19,7 +21,7 @@ URxvt.tabbed.tabbar-bg:	0
 URxvt.tabbed.tab-fg:	0
 URxvt.tabbed.tab-bg:	80
 
-urxvt*termName:xterm
+#urxvt*termName:xterm
 
 URxvt.perl-ext:      default,url-select
 URxvt.keysym.M-u:    perl:url-select:select_next

@@ -13,6 +13,7 @@ set incsearch
 set ignorecase
 set smartcase
 set wildmenu
+set showcmd
 
 set ruler
 set showmatch
@@ -20,7 +21,8 @@ set softtabstop=8
 set wrap
 syntax on
 set background=dark
-colorscheme solarized
+"colorscheme solarized
+colorscheme xoria256
 filetype on
 set foldmethod=indent
 set nofoldenable
@@ -71,3 +73,5 @@ fun SetupVAM()
 
 call pathogen#infect()
 let g:Powerline_symbols = 'unicode'
+set cursorline
+
