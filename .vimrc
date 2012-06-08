@@ -73,5 +73,8 @@ fun SetupVAM()
 
 call pathogen#infect()
 let g:Powerline_symbols = 'unicode'
-set cursorline
+
+set cursorline "displays pressed key
+
+set rnu "relative line numbers
 
