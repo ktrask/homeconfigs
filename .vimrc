@@ -27,6 +27,7 @@ filetype on
 set foldmethod=indent
 set nofoldenable
 set laststatus=2
+set mouse=a
 
 hi Comment      ctermfg=darkcyan
 

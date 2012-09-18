@@ -43,6 +43,10 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias "cdM"="cd $HOME/Bildung/studium/master-physik/masterarbeit/"
 
+
+alias "cdH"="cd $HOME/Haushalt"
+
+
 #alias pwgen="pwgen 20"
 alias pacman='pacman-color'
 alias 'sudo pacman'='sudo pacman-color'
