@@ -29,6 +29,10 @@ set nofoldenable
 set laststatus=2
 set mouse=a
 
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set list
+
+
 hi Comment      ctermfg=darkcyan
 
 "set runtimepath="/usr/share/vim/vimfiles/plugin/"
