@@ -85,4 +85,4 @@ function pless() {
 
 
 #task
-
+alias tndspass="PASSWORD_STORE_DIR=~/progs/nds/ikiwiki pass"
